@@ -41,12 +41,12 @@ Two Python codes are developed for the MSEIR model.
 
 *Mij_calculation.py* derives the M_ij by the Huff model, generating the related mobility variables in *Mij.csv*.
 
-*runmodel.py* is the main code for model fitting and simulation. It may take a few hours to derive the full results. 
+[*runmodel.py*](https://github.com/xic19022/mseir/blob/model_codes/runmodel.py) is the main code for model fitting and simulation. It may take a few hours to derive the full results. 
 
 Additional packages required: *SciPy* and *scikit-learn* are needed. The packages can be installed using *pip* or *conda*.
 
 **Inputs:** Input data for running *runmodel.py* include the population and daily confirmed cases (filename: *reported511.csv*) and the estimated M_ij of each model (filename: *Mij.csv*; the file is derived by running *Mij_calculation.py*). Please change the reading and writing file paths to your own local directory, when running the codes.
 
-**Outputs:** The outputs of *runmodel.py* is a csv file including daily cumulative cases of infection for each town, statistics (r-squared and RMSE), and estimated parameters for each MSEIR model. The simulated daily cases up to July 12, 2020 are stored in the dictionary *estall* but are not written in the local directory. 
+**Outputs:** The outputs of [*runmodel.py*](https://github.com/xic19022/mseir/blob/model_codes/runmodel.py) is a csv file including daily cumulative cases of infection for each town, statistics (r-squared and RMSE), and estimated parameters for each MSEIR model. The simulated daily cases up to July 12, 2020 are stored in the dictionary *estall* but are not written in the local directory. 
 
 We have also genereted case simulation by Model 7 and Model R with an end date of 12/31/2020, as shown in *result1231.csv*.
