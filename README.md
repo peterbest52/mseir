@@ -16,14 +16,23 @@ The data is derived from the CT Coronavirus daily report [https://portal.ct.gov/
 *Mij.csv* contains the mobility variable (i.e., trips between towns) for the model, including:
 
 *Model 1*: Mij_10%_20mi
+<br />
 *Model 2*: Mij_10%_60mi
+<br />
 *Model 3*: Mij_10%_140mi
+<br />
 *Model 4*: Mij_30%_20mi
+<br />
 *Model 5*: Mij_30%_60mi
+<br />
 *Model 6*: Mij_30%_140mi
+<br />
 *Model 7*: Mij_50%_20mi
+<br />
 *Model 8*: Mij_50%_60mi
+<br />
 *Model 9*: Mij_50%_140mi
+<br />
 *Model R*: Mij_R
 
 ## Codes
