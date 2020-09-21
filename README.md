@@ -10,10 +10,10 @@ The data and codes can be accessed on this Github repo.
 
 ## Data
 
-*data.csv* is the raw data. It is the Connecticut COVID-19 cumulative cases of infection on the town level (March 23-Sep 7, 2020).
-The data is derived from the CT Coronavirus daily report [https://portal.ct.gov/coronavirus]. The raw data is only for exploratory purposes. The equivalent COVID-19 data for running the codes is *reported511.csv*.
+[*data.csv*](https://github.com/xic19022/mseir/blob/master/data.csv) is the raw data. It is the Connecticut COVID-19 cumulative cases of infection on the town level (March 23-Sep 7, 2020).
+The data is derived from the CT Coronavirus daily report [https://portal.ct.gov/coronavirus]. The raw data is only for exploratory purposes. The equivalent COVID-19 data for running the codes is [*reported511.csv*](https://github.com/xic19022/mseir/blob/master/reported511.csv).
 
-*Mij.csv* contains the mobility variable (i.e., trips between towns) for the model, including:
+[*Mij.csv*](https://github.com/xic19022/mseir/blob/master/Mij.csv) contains the mobility variable (i.e., trips between towns) for the model, including:
 
 *Model 1*: Mij_10%_20mi
 <br />
@@ -39,14 +39,14 @@ The data is derived from the CT Coronavirus daily report [https://portal.ct.gov/
 
 Two Python codes are developed for the MSEIR model.
 
-*Mij_calculation.py* derives the M_ij by the Huff model, generating the related mobility variables in *Mij.csv*.
+[*Mij_calculation.py*](https://github.com/xic19022/mseir/blob/master/Mij_calculation.py) derives the M_ij by the Huff model, generating the related mobility variables in [*Mij.csv*](https://github.com/xic19022/mseir/blob/master/Mij.csv).
 
 [*runmodel.py*](https://github.com/xic19022/mseir/blob/model_codes/runmodel.py) is the main code for model fitting and simulation. It may take a few hours to derive the full results. 
 
 Additional packages required: *SciPy* and *scikit-learn* are needed. The packages can be installed using *pip* or *conda*.
 
-**Inputs:** Input data for running *runmodel.py* include the population and daily confirmed cases (filename: *reported511.csv*) and the estimated M_ij of each model (filename: *Mij.csv*; the file is derived by running *Mij_calculation.py*). Please change the reading and writing file paths to your own local directory, when running the codes.
+**Inputs:** Input data for running *runmodel.py* include the population and daily confirmed cases (file: [*reported511.csv*](https://github.com/xic19022/mseir/blob/master/reported511.csv)) and the estimated M_ij of each model (file: [*Mij.csv*](https://github.com/xic19022/mseir/blob/master/Mij.csv)); the file is derived by running [*Mij_calculation.py*](https://github.com/xic19022/mseir/blob/master/Mij_calculation.py). Please change the reading and writing file paths to your own local directory, when running the codes.
 
 **Outputs:** The outputs of [*runmodel.py*](https://github.com/xic19022/mseir/blob/model_codes/runmodel.py) is a csv file including daily cumulative cases of infection for each town, statistics (r-squared and RMSE), and estimated parameters for each MSEIR model. The simulated daily cases up to July 12, 2020 are stored in the dictionary *estall* but are not written in the local directory. 
 
-We have also genereted case simulation by Model 7 and Model R with an end date of 12/31/2020, as shown in *result1231.csv*.
+We have also genereted case simulation by Model 7 and Model R with an end date of 12/31/2020, as shown in [*result1231.csv*](https://github.com/xic19022/mseir/blob/master/result1231.csv).
