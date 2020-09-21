@@ -2,9 +2,9 @@
 
 In the early development of COVID-19, large-scale preventive measures, such as border control and air travel restrictions, were implemented to slow international and domestic transmissions. When these measures were in full effect, new cases of infection would be primarily induced by community spread, such as the human interaction within and between neighboring cities and towns, which is generally known as the meso-scale. Existing studies of COVID-19 using mathematical models are unable to accommodate the need for meso-scale modeling, because of the unavailability of COVID-19 data at this scale and the different timings of local intervention policies. In this respect, we propose a meso-scale mathematical model of COVID-19, named **the meso-scale Susceptible, Exposed, Infectious, Recovered (MSEIR) model**, using town-level infection data in the state of Connecticut. We consider the spatial interaction in terms of the inter-town travel in the model. Based on the developed model, we evaluated how different strengths of social distancing policy enforcement may impact future epidemic curves based on two evaluative metrics: compliance and containment. The developed model and the simulation results will establish the foundation for community-level assessment and better preparedness for COVID-19.
 
-**MSEIR** represents Meso-scale Susceptible, Exposed, Infectious, Recovered model. The meso-scale, generally known as a study area of 1–1000 kilometers, is of critical importance in the effective containment of the epidemic growth. The MSEIR model is developed to simulate the cases of COVID-19 infection at the town-level. 
-
 # MSEIR Data and Codes 
+
+**MSEIR** represents Meso-scale Susceptible, Exposed, Infectious, Recovered model. The meso-scale, generally known as a study area of 1–1000 kilometers, is of critical importance in the effective containment of the epidemic growth. The MSEIR model is developed to simulate the cases of COVID-19 infection at the town-level. 
 
 The data and codes can be accessed on this Github repo.
 
